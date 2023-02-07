@@ -4,6 +4,9 @@ import subprocess as sp
 import sys
 from typing import List
 
+# On my laptop I am dualbooting. To deal with backing my "fragmented" system up I use Borg backup. (https://www.borgbackup.org/)
+# This alone was not enough so I decided to make this script for minimal-effort backups; hopefully encouraging me to do it more often.
+
 # This script is a notably safer way for me to perform my backups easily. Before this job was done by a 5-line bash script, but 
 # because it is an important operation, it necessitated a safer approach. Python was a convenient choice.
 # It has extra functionality: backups can be performed on individual Operating Systems/partitions as well as together. For 
