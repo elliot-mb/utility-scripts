@@ -59,12 +59,11 @@ def main():
     
     cp: subp.CompletedProcess = subp.CompletedProcess(args=args_box.get_command(), returncode=1)
     while(cp.returncode != 0):
-        print("attempt:", attempt)
         cp = subp.run(args_box.get_command(), shell=True)
 
         attempt += 1
 
-        print("waiting:", str(wait_time) + "s")
+        print("retry: waiting:", str(wait_time) + "s")
         if(cp.returncode != 0): sleep(int(wait_time))
 
         wait_time = backoff(wait_time, backoff_fact, backoff_lim)
