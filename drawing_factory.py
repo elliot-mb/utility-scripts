@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+# This script's job is to help me keep my drawings organised. I like to create digital drawings from a template drawing that starts with a certain layer grouping and structure, including colouring layers, a sketch layer etc. I usually manually copy a template into it's own folder inside a "created" directory, so that I can have multiple versions of the same drawing in their own folder. This just gets me started with that, creating a blank copy of the defined template in its own folder in a "created" folder
+
 import argparse
 import subprocess
 
